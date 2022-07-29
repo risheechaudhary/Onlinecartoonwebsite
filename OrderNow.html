@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+
+    <!-- main css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="brand"><img src="img/logo.png" alt="rick and morty logo"></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="CharacterProfile.html">Character Profile</a></li>
+            <li><a href="OrderNow.html">Order Now</a></li>
+
+        </ul>
+    </nav>
+</header>
+<main>
+
+   
+
+    <section class="container order-form">
+        <article>
+            <h5 class="margin-2">Snelle levering</h5>
+            <p class="margin-2">Wij zorgen ervoor dat uw bestelling binnen 24 uur wordt gepost. Wij krijgen binnen 24
+                uur een bestelling
+                met pakbon binnen. Dezelfde dag wordt uw boek nog gepost. Wij bevestigen dezelfde dag uw bestelling en
+                zijn na de eerstvolgende brievenbuslichting in de praktijk meestal de volgende dag al in huis. Als de
+                lichting is geweest, dan wordt dat 1 dag later. Boeken die dikker zijn uitgezonderd; die worden direct
+                naar het servicepunt voor u gebracht, daar wonen wij naast. De boeken in een pakket doen gemiddeld 4
+                dagen over de verzending. Uiteraard wordt alles netjes voor u verpakt.</p>
+
+            <h5 class="margin-2">Retourneren & Voorwaarden</h5>
+            <ul>
+                <li>14 dagen bedenktijd</li>
+                <li>Retourkosten zijn voor eigen rekening</li>
+            </ul>
+        </article>
+        <form action="ordered.html" method="post" onsubmit="target_popup(this)">
+            <h5 id='order-form' class="margin-3">Order Now</h5>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Full Name">
+
+            <label for="address">Address</label>
+            <input id="address" type="text" placeholder="Address">
+
+            <label for="email">E-mail</label>
+            <input id="email" type="text" placeholder="E-mail">
+
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Phone">
+
+            <button type="submit">Order Now!</button>
+        </form>
+    </section>
+
+</main>
+<script src="js/main.js"></script>
+
+</body>
+</html>
